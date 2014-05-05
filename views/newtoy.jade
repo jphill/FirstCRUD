@@ -1,0 +1,7 @@
+extends layout
+
+block content
+    h1= title
+    form#formAddToy(name="addtoy",method="post",action="/addtoy")
+        input#inputchildhoodtoy(type="text", placeholder="Childhood Toy", name="childhoodtoy")
+        button#btnSubmit(type="submit") submit
